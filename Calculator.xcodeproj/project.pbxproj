@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1355CAA2994AFCD0015A8B0 /* CalculatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1355CA92994AFCD0015A8B0 /* CalculatorLogic.swift */; };
 		D18021ED2991FF9D000E9EFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18021EC2991FF9D000E9EFB /* AppDelegate.swift */; };
 		D18021EF2991FF9D000E9EFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18021EE2991FF9D000E9EFB /* SceneDelegate.swift */; };
-		D18021F12991FF9D000E9EFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18021F02991FF9D000E9EFB /* ViewController.swift */; };
+		D18021F12991FF9D000E9EFB /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18021F02991FF9D000E9EFB /* ResultViewController.swift */; };
 		D18021F42991FF9D000E9EFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18021F22991FF9D000E9EFB /* Main.storyboard */; };
 		D18021F62991FF9F000E9EFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D18021F52991FF9F000E9EFB /* Assets.xcassets */; };
 		D18021F92991FF9F000E9EFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18021F72991FF9F000E9EFB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D1355CA92994AFCD0015A8B0 /* CalculatorLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLogic.swift; sourceTree = "<group>"; };
 		D18021E92991FF9D000E9EFB /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D18021EC2991FF9D000E9EFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D18021EE2991FF9D000E9EFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D18021F02991FF9D000E9EFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D18021F02991FF9D000E9EFB /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		D18021F32991FF9D000E9EFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D18021F52991FF9F000E9EFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D18021F82991FF9F000E9EFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1355CAB2994AFD70015A8B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D1355CA92994AFCD0015A8B0 /* CalculatorLogic.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D1355CAC2994AFE10015A8B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D18021F22991FF9D000E9EFB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D1355CAD2994AFEA0015A8B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D18021F02991FF9D000E9EFB /* ResultViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		D18021E02991FF9D000E9EFB = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +84,9 @@
 			children = (
 				D18021EC2991FF9D000E9EFB /* AppDelegate.swift */,
 				D18021EE2991FF9D000E9EFB /* SceneDelegate.swift */,
-				D18021F02991FF9D000E9EFB /* ViewController.swift */,
-				D18021F22991FF9D000E9EFB /* Main.storyboard */,
+				D1355CAB2994AFD70015A8B0 /* Model */,
+				D1355CAC2994AFE10015A8B0 /* View */,
+				D1355CAD2994AFEA0015A8B0 /* Controller */,
 				D18021F52991FF9F000E9EFB /* Assets.xcassets */,
 				D18021F72991FF9F000E9EFB /* LaunchScreen.storyboard */,
 				D18021FA2991FF9F000E9EFB /* Info.plist */,
@@ -138,7 +165,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D18021F12991FF9D000E9EFB /* ViewController.swift in Sources */,
+				D1355CAA2994AFCD0015A8B0 /* CalculatorLogic.swift in Sources */,
+				D18021F12991FF9D000E9EFB /* ResultViewController.swift in Sources */,
 				D18021ED2991FF9D000E9EFB /* AppDelegate.swift in Sources */,
 				D18021EF2991FF9D000E9EFB /* SceneDelegate.swift in Sources */,
 			);
@@ -292,8 +320,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,9 +329,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.calculator.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,8 +350,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +359,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.calculator.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
